@@ -1,0 +1,24 @@
+# File    : .gitignore
+# Author  : Hadi Sarhangi Fard
+# Date    : 2026-11-19
+# Purpose : files that are never committed
+
+__pycache__/
+*.py[cod]
+*.tmp
+*.part
+
+# build output (DeepTome_Setup.exe is published on the Releases page, not in the repository)
+deeptome/
+installer/dist/
+
+# backups and private test files
+*.backup*.py
+*.pdf
+
+# user data never belongs into the repository
+.pdf_book_translator/
+settings.json
+history.json
+user_instructions.txt
+glossary.txt
