@@ -1,0 +1,45 @@
+DEEPTOME TRANSLATOR - THIRD-PARTY COMPONENTS
+============================================
+
+DeepTome Translator uses the work of other authors.  None of it is inside the installer: Setup downloads each
+component from its own publisher onto your computer, where it stays under its own licence.  The licence text of
+every Python package is installed with it in
+    %LOCALAPPDATA%\Programs\DeepTome\python\Lib\site-packages\<package>-<version>.dist-info
+
+The licences below are stated as the projects name them; the project pages are authoritative.
+
+Programs and libraries
+----------------------
+  Python 3.12 (python-build-standalone)   PSF License                    https://www.python.org
+  Tcl/Tk (window toolkit)                 Tcl/Tk License                 https://www.tcl.tk
+  PyMuPDF / MuPDF (reading, writing PDF)  GNU AGPL v3, or a commercial   https://pymupdf.io
+                                          licence from Artifex Software
+  CTranslate2 (translation runtime)       MIT                            https://github.com/OpenNMT/CTranslate2
+  Transformers, Hugging Face Hub,
+  Accelerate, Tokenizers, Safetensors     Apache-2.0                     https://github.com/huggingface
+  SentencePiece                           Apache-2.0                     https://github.com/google/sentencepiece
+  PyTorch (used once, to convert a model) BSD-3-Clause                   https://pytorch.org
+  Protocol Buffers                        BSD-3-Clause                   https://protobuf.dev
+  fontTools                               MIT                            https://github.com/fonttools/fonttools
+  python-docx                             MIT                            https://github.com/python-openxml/python-docx
+  Pyphen (hyphenation)                    GPL 2.0+ / LGPL 2.1+ / MPL 1.1 https://pyphen.org
+  NumPy and further small packages        BSD / MIT / Apache-2.0         see their dist-info folders
+  Ollama (optional, separate program)     MIT                            https://ollama.com
+
+AI models
+---------
+  MADLAD-400 3B (Google)                  Apache-2.0                     https://huggingface.co/google/madlad400-3b-mt
+  NLLB-200 (Meta, optional)               CC-BY-NC 4.0 (non-commercial)  https://huggingface.co/facebook/nllb-200-distilled-1.3B
+  Gemma 3 (Google, through Ollama)        Gemma Terms of Use             https://ai.google.dev/gemma/terms
+  Other Ollama models (Qwen ...)          the licence of each model      https://ollama.com/library
+
+Fonts
+-----
+  Persian and Latin fonts that the program downloads on request keep the licences of their designers (most of
+  them SIL Open Font License).  Fonts that are already installed on your computer are used under your own licence.
+
+Note on PyMuPDF
+---------------
+  PyMuPDF is licensed under the GNU Affero General Public License.  The program code of DeepTome Translator that
+  uses it (book_translator.py) is delivered in readable form in the program folder.  Whoever distributes or
+  changes the program must respect the terms of that licence as far as PyMuPDF is concerned.

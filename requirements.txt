@@ -1,0 +1,25 @@
+# File    : requirements.txt
+# Author  : Hadi Sarhangi Fard
+# Date    : 2026-11-19   (DeepTome Translator 3.4)
+# Purpose : the Python packages of DeepTome Translator
+#           (voices, speech recognition and sound capture - piper-tts, edge-tts, faster-whisper, soundcard - are
+#            installed by Setup or from Settings -> Components with one click)
+#
+# DeepTome Translator – install once with:
+#     python -m pip install -r requirements.txt
+# (use the same "python" that you start book_translator.py with)
+
+# ---- core: PDF reading / typesetting, fonts, Word output
+pymupdf>=1.24.3
+fonttools>=4.50
+python-docx>=1.1          # Word (.docx) output
+pyphen                    # German hyphenation
+
+# ---- local open-source translation engine (after the first download everything runs offline)
+ctranslate2>=4.0
+transformers>=4.40
+sentencepiece>=0.2
+protobuf
+huggingface_hub
+accelerate
+torch                     # only used once, to convert the model to a fast 8-bit format

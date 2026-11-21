@@ -1,0 +1,58 @@
+# Changelog
+
+
+## Version 3.5   (2026-11-21)
+- Subtitle files (.srt, .vtt, .ass, .ssa, .sbv, .sub): recognised automatically; only the spoken text is translated, times, styles and format stay unchanged; the output is a subtitle file of the same kind.
+- Settings window: every component (engine, models, Ollama, voices, speech recognition, data folders) with its status and size; install or remove each with one click; voices per language; system information.
+- Voices: offline Piper voices for all five languages (installed by Setup), online Microsoft Edge voices, Windows voices; choose the voice of every language.
+- Quick translate: small window without title bar, any size; Persian is typed correctly (native Windows text box); the offline model starts loading when the window opens; 📝 saves every translation in a text file of the day; 🎤 speaking instead of typing, without time limit.
+- Live translation: two thin strips on top of every window show what is heard (film, video, call) and its translation; summary switch; daily text file with a title, date and time for every session.
+- Engine start 2 minutes faster: the tokenizer of MADLAD-400 is read with sentencepiece alone (transformers is no longer imported).
+- Review window: one selection at a time, Esc clears it; drag blocks with the mouse; frame any area (names, pictures) by dragging on an empty place and move it; arrow keys and exact X / Y / width in pt or mm from the top-left corner; every change is shown at once and typeset again automatically; Undo all; tools no longer leave selections behind; Persian text in the editor is typed and moved through correctly.
+- Help, About, Glossary, My instructions, History and Settings open only once.
+- My instructions and Glossary: list of all earlier entries with date; click to see, change or delete.
+- Files in languages that are not supported yet (Arabic, Russian, Chinese, Italian …) are recognised and refused with a message.
+- About: the copyright line is smaller and sits under the text, above the GitHub address.
+
+## Version 3.4.1 (2026-11-21)
+- Model conversion: the hidden 1/32 output scale (transformers 5 + CTranslate2) is removed, so 'Best quality' and the choice between candidate translations work on real probabilities again.
+- Model conversion: the SentencePiece file is copied into the converted model, so the exact token count keeps working.
+- Persian -> English / German …: standard headings (چکیده, کلمات کلیدی, نتیجه‌گیری …) get their fixed translation.
+- Persian -> Latin languages: numbers and kept terms are no longer typeset with the Persian font of the original (it showed 0-9 as Persian digits).
+
+## Version 3.4   (2026-11-19)
+- Quick translate: a window to translate typed or pasted text at once, with pronunciation (Windows voices).
+- Persian files are recognised correctly; a PDF with a damaged text layer is marked.
+- Persian PDFs written by DeepTome keep a readable (copyable, searchable) text layer.
+- Files that are not English: the technical terms of the origin language are shown before the start, each can be kept, translated by the engine or given a fixed translation in the target language.
+- Review window: Enter for new lines, several spaces, size / bold / italic of selected words, line spacing, block height that moves the content below, and a Space tool that inserts or removes room on the page.
+
+## Version 3.3   (2026-11-16)
+- New high-resolution program icon.
+- Name of the author and copyright notice in the program, in Setup and in the documents.
+- The package comes with README (English, Persian), LICENSE, THIRD_PARTY_NOTICES and this file.
+
+## Version 3.2   (2026-11-16)
+- The language of the file is detected automatically; the program shows pages and tokens.
+- Help: illustrated quick guide in English, Persian, German, French and Spanish.
+- Windows Setup program: installs everything on a computer without Python.
+
+## Version 3.1   (2026-11-16)
+- Review window rebuilt: click a block to edit it, drag it, move or erase areas, insert symbols.
+- Titles of two or three lines are translated as one title.
+- Long jobs on a slow computer are saved as numbered files of 20 pages; files over 700 pages are refused.
+- Remaining time is estimated from the amount of text.
+
+## Version 3.0   (2026-11-16)
+- Two more translation engines: Ollama (local language models) and online API (OpenAI-compatible).
+- English, Persian, German, French and Spanish in both directions.
+- Fractions inside a sentence are copied as a picture; margin notes and names of persons are kept.
+- Workload chart shows four pages, follows the work and can be dragged.
+
+## Version 2.9   (2026-11-16)
+- Workload chart, sounds, green RUN button.
+- Guards against invented text in short lines; numbers must come back unchanged.
+
+## Version 2.8   (2026-11-15)
+- Translation in parts of two pages with a cache: an interrupted job continues.
+- "Translate with review", "My instructions", history, settings, output folder of your choice.

@@ -1,0 +1,43 @@
+DEEPTOME TRANSLATOR - LICENCE
+=============================
+
+Copyright (c) 2026 Hadi Sarhangi Fard. All rights reserved.
+
+"The Software" means the program DeepTome Translator: its program code, its installer, its texts, its logo and
+its documentation, as written by Hadi Sarhangi Fard ("the Author").
+
+1. Permission to use
+   You may install the Software and use it free of charge to translate your own documents, for private, study
+   and work purposes.
+
+2. What needs the written permission of the Author
+   Without the prior written permission of the Author you may not
+     a) sell, rent or sub-license the Software, or offer it as a paid service;
+     b) publish or distribute changed versions of the Software;
+     c) remove or change the name of the Author, the copyright notices or the logo;
+     d) present the Software, or a changed version of it, as your own work.
+   You may pass on the unchanged installation package, complete with this file, free of charge.
+
+3. Third-party components
+   The Software works together with open-source components and AI models of other authors (see
+   THIRD_PARTY_NOTICES.txt).  They are not part of the Software in the sense of this licence: they are downloaded
+   from their own publishers during the installation and remain under their own licences.  Where the licence of
+   such a component gives you rights that go further than this text, or requires something that this text does
+   not allow, the licence of that component applies to that component and to what it requires.
+
+4. Your documents
+   You are responsible for having the right to translate the documents you open, and for how you use the
+   translations.  The copyright of a translated document stays with the owners of the original.
+
+5. No warranty
+   The Software is provided "as is", without warranty of any kind.  Machine translation can contain mistakes,
+   leave out text or change the meaning.  Check a translation before you rely on it.  To the extent permitted by
+   law, the Author is not liable for any damage that results from the use of the Software or of a translation
+   made with it.
+
+6. Online services
+   If you choose the "Online API" engine, the text of your document is sent to the service you entered.  That
+   service has its own terms and prices; the Author has no part in it.
+
+7. Contact
+   For permissions and questions:  https://github.com/Hadifard
